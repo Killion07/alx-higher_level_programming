@@ -1,15 +1,14 @@
 #!/usr/bin/python3
 """Creating a class for a square"""
 
+
 class Square:
     """Initializing the size to zero"""
-    def __init__(self, size = 0):
-        self.__size = size
-        try:
-            size.isdigit()
-        except TypeError:
-            print("size must be an integer")
-        try:
-            size >= 0
-        except ValueError:
-            print("size must be >= 0")
+    def __init__(self, size=0):
+        if type(size) is int:
+            if size < 0:
+                raise ValueError('size must be >= 0')
+            else:
+                self.__size = size
+        else:
+            raise TypeError('size must be >= 0')
