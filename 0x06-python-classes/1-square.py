@@ -2,7 +2,7 @@
 """A class called square"""
 
 
-class square:
+class Square:
     """The class has a difened size
     Attributes:
         __size (int): size of a side of the square
@@ -14,4 +14,4 @@ class square:
         Returns: None
 
         """
-        self.size = size
+        self.__size = size
