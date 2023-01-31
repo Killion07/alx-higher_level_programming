@@ -3,6 +3,7 @@
 Locked class
 """
 
+
 class LockedClass:
     """
     Prevents user from instantiating any other class appert from first_name
