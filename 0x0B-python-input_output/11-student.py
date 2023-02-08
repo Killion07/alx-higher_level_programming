@@ -23,6 +23,7 @@ class Student:
             except FileNotFoundError:
                 pass
         return new_dict
+    
     def reload_from_json(self, json):
         """replaces all attributes of the Student instance"""
         for key in json:
