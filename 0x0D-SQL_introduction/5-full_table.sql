@@ -1,2 +1,2 @@
 -- Decribing a atable
-DESC first_table;
+SHOW CREATE first_table;
